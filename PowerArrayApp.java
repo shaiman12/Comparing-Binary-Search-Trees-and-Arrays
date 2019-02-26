@@ -1,5 +1,8 @@
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -10,6 +13,7 @@ import java.util.Scanner;
  */
 public class PowerArrayApp {
 	private static Item items[] = new Item[500];
+	private static int opCount = 0;
 	
 	
 	
@@ -24,7 +28,11 @@ public class PowerArrayApp {
 		for(int i = 0;i<items.length;i++) {
 			if(items[i].getDate().equalsIgnoreCase(dateTime)) {
 				found = true;
+				opCount++;
 				System.out.println(items[i].getDate()+"\t"+items[i].getPower()+"\t"+items[i].getVoltage());
+				break;
+			}else {
+				opCount++;
 			}
 		}
 		if (found==false) {
@@ -57,20 +65,37 @@ public class PowerArrayApp {
 				
 			}
 	
-	
+			scan.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
+		
+	     
+	   
 		if(args.length==0) {
 			printAllDateTimes();
 		}else {
 			printDateTime(args[0]);
 			
+			
+			
+			
 		}
 		
+		try {
+			String output = "Amount of comparison operations completed:\t"+opCount;
+			BufferedWriter writer;
+			writer = new BufferedWriter(new FileWriter("arrayPerformance.txt"));
 		
+			 writer.write(output);
+			 writer.close();
+		
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		
 		

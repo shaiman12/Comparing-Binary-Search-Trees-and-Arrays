@@ -1,0 +1,1 @@
+Amount of comparison operations completed:	482

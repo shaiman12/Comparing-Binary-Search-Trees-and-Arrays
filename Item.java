@@ -11,6 +11,7 @@ public class Item {
 	private double voltage;
 	
 	
+	
 	/**
 	 * 
 	 * @param date - used to store the date recorded
