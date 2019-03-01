@@ -57,11 +57,9 @@ public class Item {
 		this.voltage = voltage;
 	}
 	
-	public String toString() {
-		return date;
-	}
 	
-	public String toString2() {
+	
+	public String toString() {
 		return getDate()+"\t"+getPower()+"\t"+getVoltage();
 	}
 	

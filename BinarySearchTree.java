@@ -1,10 +1,12 @@
 
 public class BinarySearchTree<dataType> {
 	private BinaryTreeNode<dataType> root;
+	private int opCount;
 
 	 public BinarySearchTree ()
 	 {
 	 root = null;
+	 opCount = 0;
 	 }
 
 	 public int getHeight ( BinaryTreeNode<dataType> node )
@@ -35,7 +37,7 @@ public class BinarySearchTree<dataType> {
 	 
 	 public void visit ( BinaryTreeNode<dataType> node )
 	 {
-	 System.out.println (node.toString());
+	 System.out.println (node.toString().substring(0, 19));
 	 }
 	 
 	 public void inOrder ()
@@ -108,12 +110,19 @@ public class BinarySearchTree<dataType> {
 	 
 	 public String find ( String d, BinaryTreeNode<dataType> node )
 	 {
-	 if (d.toString().compareTo (node.toString()) == 0)
-	 return node.toString();
-	 else if (d.toString().compareTo (node.toString()) < 0)
-	 return (node.left == null) ? null : find (d, node.left);
-	 else
-	 return (node.right == null) ? null : find (d, node.right);
+	 if (d.toString().compareTo (node.toString().substring(0, 19)) == 0) {
+		 opCount++;
+		 return node.toString();}
+	 else if (d.toString().compareTo (node.toString().substring(0, 19)) < 0) {
+		 opCount++;
+	 return (node.left == null) ? null : find (d, node.left);}
+	 else {
+		 opCount++;
+	 return (node.right == null) ? null : find (d, node.right);}
 	 }
+
+	public int getOpCount() {
+		return opCount;
+	}
 	 
 }//end of class
