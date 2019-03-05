@@ -1,1 +1,1 @@
-Amount of comparison operations completed:	325
+500
