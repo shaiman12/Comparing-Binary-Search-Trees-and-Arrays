@@ -78,7 +78,7 @@ public class PowerBSTApp {
 		}
 		
 		try {
-			String output = ""+x.getOpCount();
+			String output = ""+x.getOpCount()+"\n";
 			BufferedWriter writer;
 			writer = new BufferedWriter(new FileWriter("BSTPerformance.txt"));
 		
