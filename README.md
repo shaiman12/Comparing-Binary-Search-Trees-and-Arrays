@@ -48,11 +48,7 @@ Use	of	generics	throughout and	giving	credit	where	it	is	due:
 In	designing	the	OOP	structure	of	the	binary	search	tree	I	decided	to	use	generics	
 throughout	so	that	I	could	use	these	classes	in	later	projects	that	may	require	me	
 to	use	a	binary	search	tree	with	objects	that	are	not	‘Item’	objects.	Furthermore,	I	
-have	adapted	the	code	for	the	binary	search	tree	from	both	the	slides	provided	
-
-
-by	UCT	lecturer	Patrick	Marais	and	the	textbook	called	‘Data	Structures	and	
-Problem	Solving	Using	Java’
+have	adapted	the	code	for	the	binary	search	tree	from	both	the	slides	provided	by	UCTand	the	textbook called	‘Data Structures	and	 Problem	Solving	Using	Java’
 
 The	BinaryTreeNode<dataType> class
 This	class	stores	a	private	generic	data	type	that	will	hold	the	object	that	is	being	
@@ -148,5 +144,5 @@ that	interacts	with	the	shell	terminal	of	a	system.	The	script	did	the	following
           implementation	and	the	binary	search	
           tree	implementation	is	found	and	stored	in	separate	text	files	
 Once	all	the	data	had	been	recorded	in	the	6	different	text	files	I	used	the	python	
-module	matplotlib	to	create	the	graphs	that	will	be	shown	below.
+module	matplotlib	to	create	the	graphs	that	will	be	shown	in the PDF file.
 
