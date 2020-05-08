@@ -7,7 +7,7 @@ This was a computer science data structures assignment where I had to compare th
 
 **Part	1:	Object	Orientated	design	and	interaction	of	experiment**
 
-The	Item	Class
+## The	Item	Class
 This	is	the	class	that	is	used	to	store	the	
 information	about	an	individual	object	of	the	
 time	series	of	power	usage	for	a	suburban	
@@ -23,7 +23,7 @@ indicate	below)	that	returns	the	date/time,
 power	and	voltage	of	a	specific	object	in	a	
 neatly	organized	string.	
 
-The	PowerArrayApp
+## The	PowerArrayApp
 This	is	an	application	that	reads	in a	CSV	file	
 called	‘cleaned_data.csv’	and	uses	a	set	of	
 scanners	to	carefully	extract	the	required	
@@ -50,7 +50,7 @@ throughout	so	that	I	could	use	these	classes	in	later	projects	that	may	require	
 to	use	a	binary	search	tree	with	objects	that	are	not	‘Item’	objects.	Furthermore,	I	
 have	adapted	the	code	for	the	binary	search	tree	from	both	the	slides	provided	by	UCTand	the	textbook called	‘Data Structures	and	 Problem	Solving	Using	Java’
 
-The	BinaryTreeNode<dataType> class
+## The	BinaryTreeNode<dataType> class
 This	class	stores	a	private	generic	data	type	that	will	hold	the	object	that	is	being	
 stored	in	the	binary	search	tree.	It	also	stores	the	reference	variables	to	the	left	
 and	right	sub-nodes	(which	are	given	package	access	privacy	modifier	status).	It	
@@ -62,7 +62,7 @@ variable	will	hold	an	‘Item’	object	and	it	will	be	able	to	use	the	‘Item�
 toString	method	that	returns	the	data	necessary	to	be	returned	as	defined	in	the	
 powerBSTApp	which	will	be	shown	below.
 
-BinarySearchTree<dataType>	class
+## BinarySearchTree<dataType>	class
 This	class	serves	as	the	typical	binary	search	tree	class.	I will	only	be	highlighting	
 the	methods	that	are	used	by	this	practical, as	there	are	other	methods	I	have	
 added	for	fun.	It	has	a	private	instance	variable	of	type	
@@ -86,7 +86,7 @@ term.	The	find	method	also	updates	the	opCount	instance	variable	every	time	a
 comparison	operation	is	completed.	The	Binary	search	tree	also	has	an	inOrder	
 traversal,	which	visits	each	node	in	the	tree	in	a	sorted	manner.
 
-PowerBSTApp
+## PowerBSTApp
 This	is	an	application	that	reads	in	a	CSV	file	called	‘cleaned_data.csv’	and	uses	a	
 set	of	scanners	to	carefully	extract	the	required	information	from	the	file	to	store	
 into	‘Item’	objects.	So	every	time	the	scanner	reads	a	new	line	of	the	CSV	file,	a	
