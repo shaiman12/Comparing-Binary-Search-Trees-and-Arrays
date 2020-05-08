@@ -1,11 +1,7 @@
 # Comparing-Binary-Search-Trees-and-Arrays
 This was a computer science data structures assignment where I had to compare the speed and efficiency of Binary Search Trees and traditional unsorted arrays
 
-# Shai	Aarons	(ARNSHA011)
-
-# Assignment	1:	Report	
-
-**Part	1:	Object	Orientated	design	and	interaction	of	experiment**
+# Part	1:	Object	Orientated	design	and	interaction	of	experiment
 
 ## The	Item	Class
 This	is	the	class	that	is	used	to	store	the	
@@ -103,7 +99,7 @@ inOrder	traversal	defined	in	the	BinarySearchTree	class. Just	before	the	program
 terminates	the	opCount	instance	variable	is	stored	in	a	text	file	called	
 BSTPerformance.txt
 
-**Part	2:	Goal	of	Experiment	and	Method	of	Execution**
+# Part	2:	Goal	of	Experiment	and	Method	of	Execution
 The	Goal
 The	goal	of	this	experiment	was	to	use	the	above	OOP	design	to	demonstrate	the	
 speed	differences	when	performing	a	search	through	a	specified	amount	of	data	
